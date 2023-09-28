@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mahmoud Zaher">
+
+<title>USED CARS IN EGYPT</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Used Car in Egypt_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Used Car in Egypt_files/libs/quarto-html/quarto.js"></script>
+<script src="Used Car in Egypt_files/libs/quarto-html/popper.min.js"></script>
+<script src="Used Car in Egypt_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Used Car in Egypt_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Used Car in Egypt_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Used Car in Egypt_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Used Car in Egypt_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Used Car in Egypt_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Used Car in Egypt_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body class="fullcontent">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title">USED CARS IN EGYPT</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source" data-quarto-source-url="https://github.com/zaher-m/ThinkAI"><i class="bi"></i> CODE</button></div></div>
+            <p class="subtitle lead">Predict price of used cars in Egypt</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Mahmoud Zaher </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">Sep 21, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="Styles/toc.css">
+
+<div id="custom-toc" class="custom-toc">
+    <p>Table of Contents</p>  
+    <div class="all-sections">  
+        <ol class="all-lists">
+            <li><a href="#EDA">Exploratory Data Analysis (EDA)</a>
+                <ol>
+                    <li><a href="#sec_1_1">Get basic statistics from numerical features</a></li>
+                    <li><a href="#sec_1_2">Analyze the distribution of all features</a></li>
+                    <li><a href="#sec_1_3">Joint distributions/relations</a></li>
+                </ol>
+            </li>
+            <li><a href="#DP">Data Preprocessing &amp; Model Selection</a>
+                <ol>
+                    <li><a href="#sec_2_1">Split the data into training and testing</a></li>
+                    <li><a href="#sec_2_2">Creating our pipeline</a></li>
+                </ol>
+            </li>
+            <li><a href="#MS">Training and Evaluation</a>
+                <ol>
+                    <li><a href="#sec_3_1">Bias-Variance and Overfit-Underfit investigation</a></li>
+                    <li><a href="#sec_3_2">Other potential models to consider</a></li>
+                </ol>
+            </li>
+            <li><a href="#HT">Hyperparameter Tuning</a>
+                <ol>
+                    <li><a href="#sec_4_1">Hyperparameter Tuning using GridSearchCV</a></li>
+                    <li><a href="#sec_4_2">Hyperparameter Tuning using RandomizedSearchCV</a></li>
+                </ol>
+            </li>
+            <li><a href="#MI">Model Interpretation</a>
+                
+            </li>
+
+
+        </ol>
+    </div>
+</div>
+<!-- ### Table of Contents
+<hr>
+
+1. [Exploratory Data Analysis (EDA)](#EDA)
+    * [Explore the distribution of the target variable 'Price'](#section_1_1)
+    * [Analyze the distribution of other numerical and categorical features](#section_1_2)
+
+2. [Data Preprocessing & Model Selection](#DP)
+    - [Split the data into training and testing sets for model evaluation](#section_3_2) 
+    - [Handle categorical variables (e.g., one-hot encoding, ordinal encoder, ..)](#section_3_1)
+    
+3. [Training and Evaluation](#MS)
+    * [Overfit, Generalization, and Underfit](#section_4_1)
+    * [Effect of the sample size in cross-validation](#section_4_2)
+    * [Other potential models](#section_4_3)
+    * [Evaluate model performance using appropriate metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R2](#section_4_4)
+    
+    
+4. [Hyperparameter Tuning](#HT) 
+    * [Hyperparameter Tuning using GridSearchCV](#section_5_1)
+5. [Model Interpretation](#MI) 
+    * [interpret the models to understand which features have the most significant impact on the car's price](#section_6_1) -->
+<br>
+<h3 class="anchored">
+Import libraries/pacakes
+</h3>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'../Data/Used Cars in Egypt.csv'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Unnamed: 0</th>
+<th data-quarto-table-cell-role="th">Brand</th>
+<th data-quarto-table-cell-role="th">Model</th>
+<th data-quarto-table-cell-role="th">Body</th>
+<th data-quarto-table-cell-role="th">Color</th>
+<th data-quarto-table-cell-role="th">Year</th>
+<th data-quarto-table-cell-role="th">Fuel</th>
+<th data-quarto-table-cell-role="th">Kilometers</th>
+<th data-quarto-table-cell-role="th">Engine</th>
+<th data-quarto-table-cell-role="th">Transmission</th>
+<th data-quarto-table-cell-role="th">Price</th>
+<th data-quarto-table-cell-role="th">Gov</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>5337</td>
+<td>Hyundai</td>
+<td>Accent</td>
+<td>Sedan</td>
+<td>Black</td>
+<td>2007</td>
+<td>Benzine</td>
+<td>140000 to 159999</td>
+<td>1600 CC</td>
+<td>Automatic</td>
+<td>140.0</td>
+<td>Giza</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>5338</td>
+<td>Hyundai</td>
+<td>Accent</td>
+<td>Sedan</td>
+<td>Silver</td>
+<td>2005</td>
+<td>Benzine</td>
+<td>180000 to 199999</td>
+<td>1000 - 1300 CC</td>
+<td>Manual</td>
+<td>78.0</td>
+<td>Qena</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>5339</td>
+<td>Hyundai</td>
+<td>Accent</td>
+<td>Sedan</td>
+<td>Gray</td>
+<td>1999</td>
+<td>Benzine</td>
+<td>140000 to 159999</td>
+<td>1400 - 1500 CC</td>
+<td>Manual</td>
+<td>70.0</td>
+<td>Giza</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>5340</td>
+<td>Hyundai</td>
+<td>Accent</td>
+<td>Sedan</td>
+<td>Blue- Navy Blue</td>
+<td>2009</td>
+<td>Benzine</td>
+<td>140000 to 159999</td>
+<td>1600 CC</td>
+<td>Automatic</td>
+<td>150.0</td>
+<td>Cairo</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>5341</td>
+<td>Hyundai</td>
+<td>Accent</td>
+<td>Sedan</td>
+<td>Silver</td>
+<td>2000</td>
+<td>Benzine</td>
+<td>10000 to 19999</td>
+<td>1000 - 1300 CC</td>
+<td>Manual</td>
+<td>75.0</td>
+<td>Giza</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 14741 entries, 0 to 14740
+Data columns (total 12 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   Unnamed: 0    14741 non-null  int64  
+ 1   Brand         14741 non-null  object 
+ 2   Model         14741 non-null  object 
+ 3   Body          14741 non-null  object 
+ 4   Color         14741 non-null  object 
+ 5   Year          14741 non-null  int64  
+ 6   Fuel          14741 non-null  object 
+ 7   Kilometers    14741 non-null  object 
+ 8   Engine        14741 non-null  object 
+ 9   Transmission  14741 non-null  object 
+ 10  Price         14741 non-null  float64
+ 11  Gov           14741 non-null  object 
+dtypes: float64(1), int64(2), object(9)
+memory usage: 1.3+ MB</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Duplicated values: </span><span class="sc">{</span>df<span class="sc">.</span>duplicated()<span class="sc">.</span><span class="bu">sum</span>()<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Duplicated values: 0</code></pre>
+</div>
+</div>
+<h3 align="center" class="anchored">
+1.Exploratory Data Analysis (EDA)
+</h3>
+<p><a class="anchor" id="EDA" href=""></a></p>
+<div class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.drop(columns<span class="op">=</span>[<span class="st">'Unnamed: 0'</span>], axis<span class="op">=</span><span class="dv">1</span>, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> make_column_selector <span class="im">as</span> selector</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> stat_summary(df):</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''Prints basic statistics for both numerical and categorical features. </span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">        df  : the input dataframe.</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    categorical_columns <span class="op">=</span>  selector(dtype_include<span class="op">=</span><span class="bu">object</span>)(df)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    numerical_columns <span class="op">=</span> selector(dtype_exclude<span class="op">=</span><span class="bu">object</span>)(df)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    numerical_summary <span class="op">=</span> df[numerical_columns].describe()[<span class="dv">1</span>:]</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    categorical_summary <span class="op">=</span> df[categorical_columns].describe()[<span class="dv">1</span>:]</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Summary Statistics for Numerical Features:"</span>)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'-'</span><span class="op">*</span><span class="dv">45</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(numerical_summary)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">Summary Statistics for Categorical Features:"</span>)</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'-'</span><span class="op">*</span><span class="dv">45</span>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(categorical_summary)</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>stat_summary(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Summary Statistics for Numerical Features:
+---------------------------------------------
+             Year       Price
+mean  2005.456821  116.584987
+std     12.655566   82.192718
+min   1970.000000    3.000000
+25%   1998.000000   43.700000
+50%   2010.000000  110.000000
+75%   2015.000000  161.000000
+max   2022.000000  471.500000
+
+Summary Statistics for Categorical Features:
+---------------------------------------------
+          Brand Model   Body  Color     Fuel        Kilometers   Engine  \
+unique        3    18      3     14        2                16        3   
+top     Hyundai   128  Sedan  White  Benzine  More than 200000  1600 CC   
+freq       5692  2425  13453   2614    14200              2505     6762   
+
+       Transmission    Gov  
+unique            2     26  
+top          Manual  Cairo  
+freq           9862   4458  </code></pre>
+</div>
+</div>
+<h4 class="anchored">
+Get basic statistics from numerical features.
+</h4>
+<p><a class="anchor" id="sec_1_1" href=""></a></p>
+<div class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> make_column_selector <span class="im">as</span> selector</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_statistics(df, bins<span class="op">=</span><span class="dv">30</span>):</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''Prints basic statistics, and plot histplot for numerical attributes from the input data. </span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="co">        df  : the input dataframe;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">        bins: the number of bins to the histogram.</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    numerical_cols <span class="op">=</span> selector(dtype_exclude<span class="op">=</span><span class="bu">object</span>)(df) <span class="co">#</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> col <span class="kw">in</span> numerical_cols:</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Stats for '</span><span class="sc">{</span>col<span class="sc">}</span><span class="ss">' column:"</span>)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>        total <span class="op">=</span> df[col].values</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Mean: </span><span class="sc">{</span>np<span class="sc">.</span>mean(total)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Standard deviation: </span><span class="sc">{</span>np<span class="sc">.</span>std(total)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Minimum: </span><span class="sc">{</span>np<span class="sc">.</span><span class="bu">min</span>(total)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Maximum: </span><span class="sc">{</span>np<span class="sc">.</span><span class="bu">max</span>(total)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Median: </span><span class="sc">{</span>np<span class="sc">.</span>median(total)<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>()</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        plt.title(<span class="ss">f"Distribution of </span><span class="sc">{</span>col<span class="sc">}</span><span class="ss"> "</span>,fontsize <span class="op">=</span> <span class="dv">15</span>)</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        sns.histplot(data <span class="op">=</span> df, x <span class="op">=</span> df[col], color <span class="op">=</span> <span class="st">'dodgerblue'</span>, kde <span class="op">=</span> <span class="va">True</span>, bins<span class="op">=</span>bins)</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>        plt.box(<span class="va">False</span>)<span class="op">;</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>        plt.show()<span class="op">;</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>get_statistics(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Stats for 'Year' column:
+Mean: 2005.4568211111864
+Standard deviation: 12.65513666459369
+Minimum: 1970
+Maximum: 2022
+Median: 2010.0
+
+Stats for 'Price' column:
+Mean: 116.58498744996947
+Standard deviation: 82.18992985817523
+Minimum: 3.0
+Maximum: 471.5
+Median: 110.0
+</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-8-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-8-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+<h4 class="anchored">
+Analyze the distribution of all features.
+</h4>
+<p><a class="anchor" id="sec_1_2" href=""></a></p>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_dist(df, features):</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''Shows distribution for both numerical and categorical attributes from the input data. </span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co">        df       : the input dataframe;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co">        features : columns in given dataframe.</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> feature <span class="kw">in</span> features:</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> df[feature].nunique() <span class="op">&gt;</span> <span class="dv">5</span>:</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>            plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">5</span>))</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>            sns.histplot(data <span class="op">=</span> features, x <span class="op">=</span> df[feature], color <span class="op">=</span> <span class="st">'dodgerblue'</span>, kde <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>            plt.title(<span class="ss">f"Distribution of </span><span class="sc">{</span>feature<span class="sc">}</span><span class="ss"> "</span>,fontsize <span class="op">=</span> <span class="dv">25</span>)</span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>            sns.despine()</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>            plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>            plt.show()</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>            plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">5</span>))</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>            sns.histplot(data <span class="op">=</span> features, x <span class="op">=</span> df[feature], color <span class="op">=</span> <span class="st">'rebeccapurple'</span>, kde <span class="op">=</span> <span class="va">False</span>)</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>            plt.title(<span class="ss">f"Distribution of </span><span class="sc">{</span>feature<span class="sc">}</span><span class="ss"> "</span>,fontsize <span class="op">=</span> <span class="dv">25</span>)</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>            sns.despine()</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>            plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>            plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>show_dist(df, df.columns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-2.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-3.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-4.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-5.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-6.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-7.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-8.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-9.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-10.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-10-output-11.png" class="img-fluid"></p>
+</div>
+</div>
+<h4 class="anchored">
+Joint relations/distributions.
+</h4>
+<p><a class="anchor" id="sec_1_3" href=""></a></p>
+<div class="cell" data-execution_count="61">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'Brand'</span>,hue <span class="op">=</span> <span class="st">'Transmission'</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Brand Distribution by Transmission'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-11-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="62">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'Brand'</span>, hue <span class="op">=</span> <span class="st">'Body'</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Brand Distribution by Body'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-12-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="64">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'Brand'</span>, hue <span class="op">=</span> <span class="st">'Fuel'</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Brand Distribution by Fuel'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="65">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'Brand'</span>, hue <span class="op">=</span> <span class="st">'Engine'</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Brand Distribution by Engine'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="67">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">'black'</span>, <span class="st">'silver'</span>, <span class="st">'gray'</span>, <span class="st">'blue'</span>, <span class="st">'green'</span>, <span class="st">'red'</span>, <span class="st">'gold'</span>, <span class="st">'gray'</span>, <span class="st">'darkred'</span>, <span class="st">'white'</span>, <span class="st">'yellow'</span>, <span class="st">'brown'</span>, <span class="st">'orange'</span>, <span class="st">'beige'</span>]</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">8</span>))  </span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>sns.set_palette(colors)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">"darkgrid"</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, y <span class="op">=</span> <span class="st">'Brand'</span>, hue <span class="op">=</span> <span class="st">'Color'</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Brand Distribution by Color'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="69">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Needs some handling</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, y <span class="op">=</span> <span class="st">'Brand'</span>, hue <span class="op">=</span> <span class="st">'Year'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> years_to_ranges(year_series):</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Map years to categorical ranges of every 8 years.</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Parameters:</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="co">        year_series: A pandas Series containing categorical years.</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="co">        pandas.Series: A new Series with categorical ranges.</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> year_to_range(year):</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>        year <span class="op">=</span> <span class="bu">int</span>(year)  </span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>        start_range <span class="op">=</span> year <span class="op">//</span> <span class="dv">8</span> <span class="op">*</span> <span class="dv">8</span>  </span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>        end_range <span class="op">=</span> start_range <span class="op">+</span> <span class="dv">8</span>  </span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>start_range<span class="sc">}</span><span class="ss">-</span><span class="sc">{</span>end_range <span class="op">-</span> <span class="dv">1</span><span class="sc">}</span><span class="ss">'</span> </span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>    mapped_series <span class="op">=</span> year_series.<span class="bu">map</span>(year_to_range)</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> mapped_series</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'Year_Ranges'</span>] <span class="op">=</span> years_to_ranges(df[<span class="st">'Year'</span>])</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>sns.countplot(data <span class="op">=</span> df, x <span class="op">=</span> <span class="st">'Brand'</span>, hue <span class="op">=</span> <span class="st">'Year_Ranges'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="70">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">10</span>))  </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>sns.set_palette([<span class="st">'gray'</span>, <span class="st">'darkred'</span>, <span class="st">'blue'</span>])</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>sns.set_style(<span class="st">"darkgrid"</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>sns.countplot(data<span class="op">=</span>df, y<span class="op">=</span><span class="st">'Gov'</span>, hue<span class="op">=</span><span class="st">'Brand'</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Count'</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Government'</span>)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Brand Distribution by Government'</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<h3 align="center" class="anchored">
+2.Data Preprocessing &amp; Model Selection
+</h3>
+<p><a class="anchor" id="DP" href=""></a></p>
+<div class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">'Price'</span>,color <span class="op">=</span> <span class="st">'dodgerblue'</span>, kde<span class="op">=</span><span class="va">True</span>, bins<span class="op">=</span><span class="dv">60</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>old_skew <span class="op">=</span> df.skew().sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>old_skew</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>Price    0.923168
+Year    -0.913110
+dtype: float64</code></pre>
+</div>
+</div>
+<section id="box-cox" class="level3">
+<h3 class="anchored" data-anchor-id="box-cox">Box-Cox</h3>
+<section id="bx-cox-transformation-is-a-statistical-technique-that-transforms-your-target-variable-so-that-your-data-closely-resembles-a-normal-distribution." class="level5">
+<h5 class="anchored" data-anchor-id="bx-cox-transformation-is-a-statistical-technique-that-transforms-your-target-variable-so-that-your-data-closely-resembles-a-normal-distribution.">Bx-Cox transformation is a statistical technique that transforms your target variable so that your data closely resembles a normal distribution.</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/c507e03b-1-latex.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">latex.png</figcaption>
+</figure>
+</div>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> PowerTransformer</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> boxcoxtrans(feature):</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Apply Box-Cox transformation and check the distribution with histogram and kdeplot.</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co">    parameters:</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="co">        feature: target feature to be transformed.</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    boxcoxTr <span class="op">=</span> PowerTransformer(method <span class="op">=</span> <span class="st">"box-cox"</span>, standardize<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">"Distribution before Transformation"</span>, fontsize<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a>    sns.histplot(df[feature], kde<span class="op">=</span><span class="va">True</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>    df_boxcox <span class="op">=</span> pd.DataFrame(boxcoxTr.fit_transform(df[feature].values.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>)))</span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">"Distribution after Transformation"</span>, fontsize<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>    sns.histplot(df_boxcox,bins<span class="op">=</span><span class="dv">20</span>, kde<span class="op">=</span><span class="va">True</span> , legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(feature)</span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'''Skewness was </span><span class="sc">{</span><span class="bu">round</span>(old_skew[feature],<span class="dv">2</span>)<span class="sc">}</span><span class="ss"> before </span></span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a><span class="ss">&amp; is </span><span class="sc">{</span><span class="bu">round</span>(df_boxcox.skew()[<span class="dv">0</span>],<span class="dv">2</span>)<span class="sc">}</span><span class="ss"> after Box-cox transformation.'''</span>)</span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a>boxcoxtrans(feature<span class="op">=</span><span class="st">"Price"</span>)</span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-21-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Skewness was 0.92 before 
+&amp; is -0.09 after Box-cox transformation.</code></pre>
+</div>
+</div>
+</section>
+<section id="yeo-johnson-transformation" class="level4">
+<h4 class="anchored">Yeo-Johnson transformation</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/2cdac21b-1-latex.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">latex.png</figcaption>
+</figure>
+</div>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> yeojohntrans(feature): </span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">'''</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Apply Yeo-Johnson transformation and check the distribution with histogram and kdeplot.</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="co">    parameters:</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co">        feature: target feature to be transformed.</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="co">    '''</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    yeojohnTr <span class="op">=</span> PowerTransformer(standardize<span class="op">=</span><span class="va">True</span>) <span class="co"># Notice: yeo-johnson is the default</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">"Distribution before Transformation"</span>, fontsize<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>    sns.histplot(df[feature], kde<span class="op">=</span><span class="va">True</span>, color<span class="op">=</span><span class="st">"red"</span>)</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>    plt.subplot(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>    df_yeojohn <span class="op">=</span> pd.DataFrame(yeojohnTr.fit_transform(df[feature].values.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>)))</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">"Distribution after Transformation"</span>, fontsize<span class="op">=</span><span class="dv">15</span>)</span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>    sns.histplot(df_yeojohn,bins<span class="op">=</span><span class="dv">20</span>, kde<span class="op">=</span><span class="va">True</span> , legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(feature)</span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'''Skewness was </span><span class="sc">{</span><span class="bu">round</span>(old_skew[feature],<span class="dv">2</span>)<span class="sc">}</span><span class="ss"> before &amp; is </span><span class="sc">{</span><span class="bu">round</span>(df_yeojohn.skew()[<span class="dv">0</span>],<span class="dv">2</span>)<span class="sc">}</span><span class="ss"> after Yeo-johnson transformation.'''</span>)</span>
+<span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>yeojohntrans(feature<span class="op">=</span><span class="st">"Price"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-22-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Skewness was 0.92 before &amp; is -0.09 after Yeo-johnson transformation.</code></pre>
+</div>
+</div>
+<h4 class="anchored">
+Split the data into training and testing sets.
+</h4>
+<p><a class="anchor" id="sec_2_1" href=""></a></p>
+<div class="cell" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>target <span class="op">=</span> <span class="st">'Price'</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df[target] <span class="op">*</span> <span class="fl">1e3</span>               <span class="co"># rescale the Price</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> df.drop(columns<span class="op">=</span>[target])</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">.2</span>)</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<h4 class="anchored">
+Creating our pipeline.
+</h4>
+<p><a class="anchor" id="section_2_2" href=""></a></p>
+<div class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.pipeline <span class="im">import</span> Pipeline</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.compose <span class="im">import</span> ColumnTransformer</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> OrdinalEncoder</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> GradientBoostingRegressor</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>categorical_columns <span class="op">=</span>  selector(dtype_include<span class="op">=</span><span class="bu">object</span>)(df)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>ordinal_encoder <span class="op">=</span> OrdinalEncoder(handle_unknown<span class="op">=</span><span class="st">'use_encoded_value'</span>, unknown_value<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>gbr_pipeline <span class="op">=</span> Pipeline([</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'preprocessor'</span>,ColumnTransformer(</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>        transformers<span class="op">=</span>[</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>            (<span class="st">"categorical"</span>, ordinal_encoder, categorical_columns),</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>        remainder<span class="op">=</span><span class="st">"passthrough"</span>,</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>        verbose_feature_names_out<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>    )),</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'regressor'</span>, GradientBoostingRegressor(</span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>        learning_rate<span class="op">=</span><span class="fl">0.5</span>,</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>]).set_output(transform<span class="op">=</span><span class="st">'pandas'</span>)</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>gbr_pipeline.fit(X_train, y_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(remainder='passthrough',
+                                   transformers=[('categorical',
+                                                  OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                 unknown_value=-1),
+                                                  ['Brand', 'Model', 'Body',
+                                                   'Color', 'Fuel',
+                                                   'Kilometers', 'Engine',
+                                                   'Transmission', 'Gov',
+                                                   'Year_Ranges'])],
+                                   verbose_feature_names_out=False)),
+                ('regressor', GradientBoostingRegressor(learning_rate=0.5))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox"><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(remainder='passthrough',
+                                   transformers=[('categorical',
+                                                  OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                 unknown_value=-1),
+                                                  ['Brand', 'Model', 'Body',
+                                                   'Color', 'Fuel',
+                                                   'Kilometers', 'Engine',
+                                                   'Transmission', 'Gov',
+                                                   'Year_Ranges'])],
+                                   verbose_feature_names_out=False)),
+                ('regressor', GradientBoostingRegressor(learning_rate=0.5))])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox"><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">preprocessor: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(remainder='passthrough',
+                  transformers=[('categorical',
+                                 OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                unknown_value=-1),
+                                 ['Brand', 'Model', 'Body', 'Color', 'Fuel',
+                                  'Kilometers', 'Engine', 'Transmission', 'Gov',
+                                  'Year_Ranges'])],
+                  verbose_feature_names_out=False)</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox"><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">categorical</label><div class="sk-toggleable__content"><pre>['Brand', 'Model', 'Body', 'Color', 'Fuel', 'Kilometers', 'Engine', 'Transmission', 'Gov', 'Year_Ranges']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox"><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">OrdinalEncoder</label><div class="sk-toggleable__content"><pre>OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox"><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">remainder</label><div class="sk-toggleable__content"><pre>['Year']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox"><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox"><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">GradientBoostingRegressor</label><div class="sk-toggleable__content"><pre>GradientBoostingRegressor(learning_rate=0.5)</pre></div></div></div></div></div></div></div>
+</div>
+</div>
+<div class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> gbr_pipeline.named_steps[<span class="st">'preprocessor'</span>].fit_transform(X)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="25">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Brand</th>
+<th data-quarto-table-cell-role="th">Model</th>
+<th data-quarto-table-cell-role="th">Body</th>
+<th data-quarto-table-cell-role="th">Color</th>
+<th data-quarto-table-cell-role="th">Fuel</th>
+<th data-quarto-table-cell-role="th">Kilometers</th>
+<th data-quarto-table-cell-role="th">Engine</th>
+<th data-quarto-table-cell-role="th">Transmission</th>
+<th data-quarto-table-cell-role="th">Gov</th>
+<th data-quarto-table-cell-role="th">Year_Ranges</th>
+<th data-quarto-table-cell-role="th">Year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>4.0</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>10.0</td>
+<td>4.0</td>
+<td>2007</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>11.0</td>
+<td>0.0</td>
+<td>6.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>20.0</td>
+<td>4.0</td>
+<td>2005</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>6.0</td>
+<td>0.0</td>
+<td>4.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>10.0</td>
+<td>3.0</td>
+<td>1999</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>4.0</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>2009</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>2.0</td>
+<td>11.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>10.0</td>
+<td>4.0</td>
+<td>2000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14736</td>
+<td>1.0</td>
+<td>16.0</td>
+<td>0.0</td>
+<td>4.0</td>
+<td>0.0</td>
+<td>5.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>1997</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">14737</td>
+<td>1.0</td>
+<td>16.0</td>
+<td>0.0</td>
+<td>11.0</td>
+<td>0.0</td>
+<td>7.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>3.0</td>
+<td>1996</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14738</td>
+<td>1.0</td>
+<td>16.0</td>
+<td>0.0</td>
+<td>4.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>10.0</td>
+<td>3.0</td>
+<td>1993</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">14739</td>
+<td>1.0</td>
+<td>16.0</td>
+<td>0.0</td>
+<td>11.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>5.0</td>
+<td>3.0</td>
+<td>1996</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14740</td>
+<td>1.0</td>
+<td>16.0</td>
+<td>0.0</td>
+<td>12.0</td>
+<td>0.0</td>
+<td>8.0</td>
+<td>0.0</td>
+<td>1.0</td>
+<td>19.0</td>
+<td>4.0</td>
+<td>2000</td>
+</tr>
+</tbody>
+</table>
+
+<p>14741 rows × 11 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>train_score <span class="op">=</span> gbr_pipeline.score(X_train, y_train)</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>test_score <span class="op">=</span> gbr_pipeline.score(X_test, y_test)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Train R^2 Score: </span><span class="sc">{</span>train_score<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Test R^2 Score: </span><span class="sc">{</span>test_score<span class="sc">:.3f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Train R^2 Score: 0.925
+Test R^2 Score: 0.915</code></pre>
+</div>
+</div>
+<h3 align="center" class="anchored" data-anchor-id="yeo-johnson-transformation">
+3.Training and Evaluation
+</h3>
+<p><a class="anchor" id="MS" href=""></a></p>
+<div class="cell" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> ShuffleSplit</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_validate</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="co"># in cases of 'accuracy_score' or 'f1_score', the higher score is better,</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="co"># but in case of losses (errors), lower score is better. To handle them both in same way, it returns the negative.</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> evaluate(model, X, y, cv):</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>    cv_results <span class="op">=</span> cross_validate(</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>        model,</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>        X,</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>        y,</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>        cv<span class="op">=</span>cv,</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>        scoring<span class="op">=</span>[<span class="st">"neg_root_mean_squared_error"</span>],</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>    rmse <span class="op">=</span> <span class="op">-</span>cv_results[<span class="st">"test_neg_root_mean_squared_error"</span>]</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(</span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>        <span class="ss">f"Root Mean Squared Error: </span><span class="sc">{</span>rmse<span class="sc">.</span>mean()<span class="sc">:.3f}</span><span class="ss"> +/- </span><span class="sc">{</span>rmse<span class="sc">.</span>std()<span class="sc">:.3f}</span><span class="ss">"</span></span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> cv_results</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>cv <span class="op">=</span> ShuffleSplit(n_splits<span class="op">=</span><span class="dv">6</span>, test_size<span class="op">=</span><span class="fl">0.3</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a><span class="co"># cv_results = evaluate(gbr_pipeline, X_train, y_train, cv=cv)</span></span>
+<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>cv_results <span class="op">=</span> evaluate(gbr_pipeline, X, y, cv<span class="op">=</span>cv)</span>
+<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Root Mean Squared Error: 24753.473 +/- 430.584</code></pre>
+</div>
+</div>
+<h4 class="anchored">
+Bias-Variance and Overfit-Underfit investigation.
+</h4>
+<p><a class="anchor" id="sec_3_1" href=""></a></p>
+<div class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>time</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> validation_curve</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>cv <span class="op">=</span> ShuffleSplit(n_splits<span class="op">=</span><span class="dv">5</span>, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>param_range <span class="op">=</span> np.linspace(<span class="dv">10</span>, <span class="dv">1000</span>, <span class="dv">10</span>).astype(<span class="bu">int</span>) </span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>train_scores, test_scores <span class="op">=</span> validation_curve(</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>    gbr_pipeline, X_train, y_train, param_name<span class="op">=</span><span class="st">"regressor__n_estimators"</span>, param_range<span class="op">=</span>param_range,</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>    scoring<span class="op">=</span><span class="st">"neg_mean_squared_error"</span>, cv<span class="op">=</span>cv</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the negative MSE scores to positive RMSE scores</span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>train_rmse <span class="op">=</span> np.sqrt(<span class="op">-</span>train_scores)</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>test_rmse <span class="op">=</span> np.sqrt(<span class="op">-</span>test_scores)</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate mean and training and test RMSE</span></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>train_mean <span class="op">=</span> np.mean(train_rmse, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>test_mean <span class="op">=</span> np.mean(test_rmse, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the validation curve</span></span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a>plt.plot(param_range, train_mean , label<span class="op">=</span><span class="st">"Training error"</span>)</span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>plt.plot(param_range, test_mean, label<span class="op">=</span><span class="st">"Validation error"</span>)</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Number of Estimators"</span>)</span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Root Mean Squared Error"</span>)</span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Validation Curve for GradientBoostingRegressor"</span>)</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a>plt.legend(loc<span class="op">=</span><span class="st">"best"</span>)</span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-29-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>CPU times: total: 2min 15s
+Wall time: 2min 49s</code></pre>
+</div>
+</div>
+<h4 class="anchored">
+Effect of the sample size in cross-validation
+</h4>
+<p><a class="anchor" id="sec_3_2" href=""></a></p>
+<div class="cell" data-execution_count="30">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="op">%%</span>time</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> LearningCurveDisplay</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>train_sizes <span class="op">=</span> np.linspace(<span class="fl">0.1</span>, <span class="fl">1.0</span>, num<span class="op">=</span><span class="dv">15</span>, endpoint<span class="op">=</span><span class="va">True</span>) </span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>cv <span class="op">=</span> ShuffleSplit(n_splits<span class="op">=</span><span class="dv">5</span>, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)  </span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a LearningCurveDisplay</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>display <span class="op">=</span> LearningCurveDisplay.from_estimator(</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>    gbr_pipeline,</span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>    X_train,</span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>    y_train,</span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a>    train_sizes<span class="op">=</span>train_sizes,</span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a>    cv<span class="op">=</span>cv,</span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>    score_type<span class="op">=</span><span class="st">"both"</span>,  <span class="co"># both train and test errors</span></span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a>    scoring <span class="op">=</span> <span class="st">"neg_root_mean_squared_error"</span>,</span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a>    negate_score<span class="op">=</span><span class="va">True</span>,  <span class="co"># use when metric starts with "neg_"</span></span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a>    score_name<span class="op">=</span><span class="st">"Root Mean Squared Error"</span>,</span>
+<span id="cb39-20"><a href="#cb39-20" aria-hidden="true" tabindex="-1"></a>    std_display_style<span class="op">=</span><span class="st">"fill_between"</span>,</span>
+<span id="cb39-21"><a href="#cb39-21" aria-hidden="true" tabindex="-1"></a>    n_jobs<span class="op">=-</span><span class="dv">1</span>,</span>
+<span id="cb39-22"><a href="#cb39-22" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb39-23"><a href="#cb39-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-24"><a href="#cb39-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-25"><a href="#cb39-25" aria-hidden="true" tabindex="-1"></a>_ <span class="op">=</span> display.ax_.set_title(<span class="st">"Learning Curve for Gradient Boosting Regressor"</span>)</span>
+<span id="cb39-26"><a href="#cb39-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Used%20Car%20in%20Egypt_files/figure-html/cell-30-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>CPU times: total: 1.2 s
+Wall time: 12.3 s</code></pre>
+</div>
+</div>
+<h4 class="anchored">
+Other potential models to consider.
+</h4>
+<p><a class="anchor" id="sec_3_2" href=""></a></p>
+<div class="cell" data-execution_count="31">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> xgboost <span class="im">import</span> XGBRegressor</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeRegressor</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsRegressor</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>X_train_fitted <span class="op">=</span> gbr_pipeline.named_steps[<span class="st">'preprocessor'</span>].fit_transform(X_train)</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>X_test_fitted <span class="op">=</span> gbr_pipeline.named_steps[<span class="st">'preprocessor'</span>].fit_transform(X_test)</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>models <span class="op">=</span> {</span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"KNNR"</span>: KNeighborsRegressor(),</span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"DTR"</span>: DecisionTreeRegressor(),</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Random Forest"</span>: RandomForestRegressor(random_state<span class="op">=</span><span class="dv">42</span>),</span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Gradient Boosting"</span>: GradientBoostingRegressor(random_state<span class="op">=</span><span class="dv">42</span>),</span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"XGB"</span>: XGBRegressor(),</span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model_name, model <span class="kw">in</span> models.items():</span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a>    model.fit(X_train_fitted, y_train)</span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a>    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="32">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_absolute_error, mean_squared_error, r2_score</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model_name, model <span class="kw">in</span> models.items():</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>    y_test_pred <span class="op">=</span> model.predict(X_test_fitted)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>    rmse <span class="op">=</span> mean_squared_error(y_test, y_test_pred, squared<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>    r2 <span class="op">=</span> r2_score(y_test, y_test_pred)</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Model: </span><span class="sc">{</span>model_name<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Root Mean Squared Error (RMSE): </span><span class="sc">{</span>rmse<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"R^2: </span><span class="sc">{</span>r2<span class="sc">:.5f}</span><span class="ss">"</span>)</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"--------"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Model: KNNR
+Root Mean Squared Error (RMSE): 29784.27
+R^2: 0.86966
+--------
+Model: DTR
+Root Mean Squared Error (RMSE): 27888.63
+R^2: 0.88572
+--------
+Model: Random Forest
+Root Mean Squared Error (RMSE): 23034.15
+R^2: 0.92204
+--------
+Model: Gradient Boosting
+Root Mean Squared Error (RMSE): 25369.59
+R^2: 0.90543
+--------
+Model: XGB
+Root Mean Squared Error (RMSE): 21621.24
+R^2: 0.93131
+--------</code></pre>
+</div>
+</div>
+<ul>
+<li>KNNR ( K Neighbors Regressor ):
+<ul>
+<li>The model has a relatively high RMSE.</li>
+</ul></li>
+<li>DTR ( Decision Tree Regressor ):
+<ul>
+<li>The model has a relatively high RMSE, and R-squared value a little bit higher than KNNR.</li>
+</ul></li>
+<li>Random Forest:
+<ul>
+<li>The model has a relatively low RMSE compared with KNNR and DTR which indicates better prediction accuracy.</li>
+<li>It has a noticeable improvement in R-squared value than previous models.</li>
+<li>Random Forest is performing well on this dataset.</li>
+</ul></li>
+<li>Gradient Boosting:
+<ul>
+<li>The model also has a relatively low RMSE.</li>
+<li>Its R-squared value is close to the Random Forest’s R-squared,</li>
+<li>Gradient Boosting is performing well.</li>
+</ul></li>
+<li>XGB ( XGB Regressor ):
+<ul>
+<li>The model has the least RMSE value compared to other models.</li>
+<li>Its R-squared value is the highest.</li>
+</ul></li>
+</ul>
+<hr>
+<ul>
+<li>In summary
+<ul>
+<li>Among previous models, XGBRegressor &amp; Random Forest appear to have the best performance based on the lowest RMSE and R-squared value.</li>
+<li>Gradient Boosting is performing slightly below both XGBRegressor &amp; Random Forest but is still a good choice.</li>
+<li>KNNR &amp; DTR are underperforming.</li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<p>Ultimately, the choice of the best model depends on various factors, including the specific goals of your analysis, the interpretability of the model, and potential further optimizations.</p>
+</blockquote>
+<h3 align="center" class="anchored">
+4.Hyperparameter Tuning
+</h3>
+<p><a class="anchor" id="HT" href=""></a></p>
+<h4 class="anchored">
+Hyperparameter Tuning using GridSearchCV.
+</h4>
+<p><a class="anchor" id="sec_4_1" href=""></a></p>
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>pipe <span class="op">=</span> Pipeline([</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'preprocessor'</span>,ColumnTransformer(</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>        transformers<span class="op">=</span>[</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>            (<span class="st">"categorical"</span>, ordinal_encoder, categorical_columns),</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a>        ])),</span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>    (<span class="st">'regressor'</span>, GradientBoostingRegressor())</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>])</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a>param_grid <span class="op">=</span> {</span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'regressor__n_estimators'</span>: [<span class="dv">50</span>, <span class="dv">100</span>, <span class="dv">150</span>],</span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'regressor__learning_rate'</span>: [<span class="dv">1</span>, <span class="fl">0.5</span>, <span class="fl">0.25</span>, <span class="fl">0.1</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>],</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'regressor__min_samples_split'</span>: [<span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>],</span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a>grid_search <span class="op">=</span> GridSearchCV(estimator<span class="op">=</span>pipe, param_grid<span class="op">=</span>param_grid, cv<span class="op">=</span><span class="dv">5</span>, n_jobs<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a>grid_search.fit(X_train, y_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="41">
+<style>#sk-container-id-4 {color: black;background-color: white;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GridSearchCV(cv=5,
+             estimator=Pipeline(steps=[('preprocessor',
+                                        ColumnTransformer(transformers=[('categorical',
+                                                                         OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                                        unknown_value=-1),
+                                                                         ['Brand',
+                                                                          'Model',
+                                                                          'Body',
+                                                                          'Color',
+                                                                          'Fuel',
+                                                                          'Kilometers',
+                                                                          'Engine',
+                                                                          'Transmission',
+                                                                          'Gov',
+                                                                          'Year_Ranges'])])),
+                                       ('regressor',
+                                        GradientBoostingRegressor())]),
+             n_jobs=-1,
+             param_grid={'regressor__learning_rate': [1, 0.5, 0.25, 0.1, 0.05,
+                                                      0.01],
+                         'regressor__min_samples_split': [2, 5, 10],
+                         'regressor__n_estimators': [50, 100, 150]})</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-20" type="checkbox"><label for="sk-estimator-id-20" class="sk-toggleable__label sk-toggleable__label-arrow">GridSearchCV</label><div class="sk-toggleable__content"><pre>GridSearchCV(cv=5,
+             estimator=Pipeline(steps=[('preprocessor',
+                                        ColumnTransformer(transformers=[('categorical',
+                                                                         OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                                        unknown_value=-1),
+                                                                         ['Brand',
+                                                                          'Model',
+                                                                          'Body',
+                                                                          'Color',
+                                                                          'Fuel',
+                                                                          'Kilometers',
+                                                                          'Engine',
+                                                                          'Transmission',
+                                                                          'Gov',
+                                                                          'Year_Ranges'])])),
+                                       ('regressor',
+                                        GradientBoostingRegressor())]),
+             n_jobs=-1,
+             param_grid={'regressor__learning_rate': [1, 0.5, 0.25, 0.1, 0.05,
+                                                      0.01],
+                         'regressor__min_samples_split': [2, 5, 10],
+                         'regressor__n_estimators': [50, 100, 150]})</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-21" type="checkbox"><label for="sk-estimator-id-21" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('categorical',
+                                                  OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                 unknown_value=-1),
+                                                  ['Brand', 'Model', 'Body',
+                                                   'Color', 'Fuel',
+                                                   'Kilometers', 'Engine',
+                                                   'Transmission', 'Gov',
+                                                   'Year_Ranges'])])),
+                ('regressor', GradientBoostingRegressor())])</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-22" type="checkbox"><label for="sk-estimator-id-22" class="sk-toggleable__label sk-toggleable__label-arrow">preprocessor: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[('categorical',
+                                 OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                unknown_value=-1),
+                                 ['Brand', 'Model', 'Body', 'Color', 'Fuel',
+                                  'Kilometers', 'Engine', 'Transmission', 'Gov',
+                                  'Year_Ranges'])])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-23" type="checkbox"><label for="sk-estimator-id-23" class="sk-toggleable__label sk-toggleable__label-arrow">categorical</label><div class="sk-toggleable__content"><pre>['Brand', 'Model', 'Body', 'Color', 'Fuel', 'Kilometers', 'Engine', 'Transmission', 'Gov', 'Year_Ranges']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-24" type="checkbox"><label for="sk-estimator-id-24" class="sk-toggleable__label sk-toggleable__label-arrow">OrdinalEncoder</label><div class="sk-toggleable__content"><pre>OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-25" type="checkbox"><label for="sk-estimator-id-25" class="sk-toggleable__label sk-toggleable__label-arrow">GradientBoostingRegressor</label><div class="sk-toggleable__content"><pre>GradientBoostingRegressor()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<div class="cell" data-execution_count="59">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="co"># get the best hyperparameters and model</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>best_params <span class="op">=</span> grid_search.best_params_</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>best_model <span class="op">=</span> grid_search.best_estimator_</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Best Hyperparameters </span><span class="ch">\n</span><span class="sc">{</span>best_params<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Best Hyperparameters 
+{'regressor__learning_rate': 0.5, 'regressor__min_samples_split': 10, 'regressor__n_estimators': 150}</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="43">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Model evaluation (after hyperparameter tuning)</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>y_test_pred_tuned <span class="op">=</span> best_model.predict(X_test)</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>r2_tuned <span class="op">=</span> r2_score(y_test, y_test_pred_tuned)</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>rmse_tuned <span class="op">=</span> mean_squared_error(y_test, y_test_pred_tuned, squared<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">GBR after hyperparameter tuning with GridSearchCV "</span>)</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"R-squared (R2): </span><span class="sc">{</span>r2_tuned<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Root Mean Squared Error (MSE): </span><span class="sc">{</span>rmse_tuned<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+GBR after hyperparameter tuning with GridSearchCV 
+R-squared (R2): 0.8974707973701769
+Root Mean Squared Error (MSE): 26415.88963541648</code></pre>
+</div>
+</div>
+<h4 class="anchored">
+Hyperparameter Tuning using RandomizedSearchCV.
+</h4>
+<p><a class="anchor" id="sec_4_2" href=""></a></p>
+<div class="cell" data-execution_count="44">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> RandomizedSearchCV</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>param_dist <span class="op">=</span> {</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'regressor__n_estimators'</span>: np.arange(<span class="dv">50</span>, <span class="dv">200</span>, <span class="dv">10</span>),</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'regressor__learning_rate'</span>: [<span class="dv">1</span>, <span class="fl">0.5</span>, <span class="fl">0.25</span>, <span class="fl">0.1</span>, <span class="fl">0.05</span>, <span class="fl">0.01</span>],</span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'regressor__min_samples_split'</span>: np.arange(<span class="dv">2</span>, <span class="dv">11</span>),</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>n_iter_search <span class="op">=</span> <span class="dv">20</span>  </span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>random_search <span class="op">=</span> RandomizedSearchCV(</span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>    estimator<span class="op">=</span>pipe, param_distributions<span class="op">=</span>param_dist, n_iter<span class="op">=</span>n_iter_search, cv<span class="op">=</span><span class="dv">5</span>, n_jobs<span class="op">=-</span><span class="dv">1</span>)</span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>random_search.fit(X_train, y_train)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="44">
+<style>#sk-container-id-5 {color: black;background-color: white;}#sk-container-id-5 pre{padding: 0;}#sk-container-id-5 div.sk-toggleable {background-color: white;}#sk-container-id-5 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-5 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-5 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-5 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-5 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-5 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-5 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-5 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-5 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-5 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-5 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-5 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-5 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-5 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-5 div.sk-item {position: relative;z-index: 1;}#sk-container-id-5 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-5 div.sk-item::before, #sk-container-id-5 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-5 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-5 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-5 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-5 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-5 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-5 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-5 div.sk-label-container {text-align: center;}#sk-container-id-5 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-5 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RandomizedSearchCV(cv=5,
+                   estimator=Pipeline(steps=[('preprocessor',
+                                              ColumnTransformer(transformers=[('categorical',
+                                                                               OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                                              unknown_value=-1),
+                                                                               ['Brand',
+                                                                                'Model',
+                                                                                'Body',
+                                                                                'Color',
+                                                                                'Fuel',
+                                                                                'Kilometers',
+                                                                                'Engine',
+                                                                                'Transmission',
+                                                                                'Gov',
+                                                                                'Year_Ranges'])])),
+                                             ('regressor',
+                                              GradientBoostingRegressor())]),
+                   n_iter=20, n_jobs=-1,
+                   param_distributions={'regressor__learning_rate': [1, 0.5,
+                                                                     0.25, 0.1,
+                                                                     0.05,
+                                                                     0.01],
+                                        'regressor__min_samples_split': array([ 2,  3,  4,  5,  6,  7,  8,  9, 10]),
+                                        'regressor__n_estimators': array([ 50,  60,  70,  80,  90, 100, 110, 120, 130, 140, 150, 160, 170,
+       180, 190])})</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br>On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden=""><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-26" type="checkbox"><label for="sk-estimator-id-26" class="sk-toggleable__label sk-toggleable__label-arrow">RandomizedSearchCV</label><div class="sk-toggleable__content"><pre>RandomizedSearchCV(cv=5,
+                   estimator=Pipeline(steps=[('preprocessor',
+                                              ColumnTransformer(transformers=[('categorical',
+                                                                               OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                                              unknown_value=-1),
+                                                                               ['Brand',
+                                                                                'Model',
+                                                                                'Body',
+                                                                                'Color',
+                                                                                'Fuel',
+                                                                                'Kilometers',
+                                                                                'Engine',
+                                                                                'Transmission',
+                                                                                'Gov',
+                                                                                'Year_Ranges'])])),
+                                             ('regressor',
+                                              GradientBoostingRegressor())]),
+                   n_iter=20, n_jobs=-1,
+                   param_distributions={'regressor__learning_rate': [1, 0.5,
+                                                                     0.25, 0.1,
+                                                                     0.05,
+                                                                     0.01],
+                                        'regressor__min_samples_split': array([ 2,  3,  4,  5,  6,  7,  8,  9, 10]),
+                                        'regressor__n_estimators': array([ 50,  60,  70,  80,  90, 100, 110, 120, 130, 140, 150, 160, 170,
+       180, 190])})</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-27" type="checkbox"><label for="sk-estimator-id-27" class="sk-toggleable__label sk-toggleable__label-arrow">estimator: Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('preprocessor',
+                 ColumnTransformer(transformers=[('categorical',
+                                                  OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                                 unknown_value=-1),
+                                                  ['Brand', 'Model', 'Body',
+                                                   'Color', 'Fuel',
+                                                   'Kilometers', 'Engine',
+                                                   'Transmission', 'Gov',
+                                                   'Year_Ranges'])])),
+                ('regressor', GradientBoostingRegressor())])</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-28" type="checkbox"><label for="sk-estimator-id-28" class="sk-toggleable__label sk-toggleable__label-arrow">preprocessor: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[('categorical',
+                                 OrdinalEncoder(handle_unknown='use_encoded_value',
+                                                unknown_value=-1),
+                                 ['Brand', 'Model', 'Body', 'Color', 'Fuel',
+                                  'Kilometers', 'Engine', 'Transmission', 'Gov',
+                                  'Year_Ranges'])])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-29" type="checkbox"><label for="sk-estimator-id-29" class="sk-toggleable__label sk-toggleable__label-arrow">categorical</label><div class="sk-toggleable__content"><pre>['Brand', 'Model', 'Body', 'Color', 'Fuel', 'Kilometers', 'Engine', 'Transmission', 'Gov', 'Year_Ranges']</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-30" type="checkbox"><label for="sk-estimator-id-30" class="sk-toggleable__label sk-toggleable__label-arrow">OrdinalEncoder</label><div class="sk-toggleable__content"><pre>OrdinalEncoder(handle_unknown='use_encoded_value', unknown_value=-1)</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-31" type="checkbox"><label for="sk-estimator-id-31" class="sk-toggleable__label sk-toggleable__label-arrow">GradientBoostingRegressor</label><div class="sk-toggleable__content"><pre>GradientBoostingRegressor()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<div class="cell" data-execution_count="53">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the best hyperparameters and model</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>best_params <span class="op">=</span> random_search.best_params_</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>best_model <span class="op">=</span> random_search.best_estimator_</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Best Hyperparameters </span><span class="ch">\n</span><span class="sc">{</span>best_params<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Best Hyperparameters 
+{'regressor__n_estimators': 180, 'regressor__min_samples_split': 9, 'regressor__learning_rate': 0.5}</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="49">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Model evaluation (after hyperparameter tuning)</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>y_test_pred_tuned <span class="op">=</span> best_model.predict(X_test)</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>r2_tuned <span class="op">=</span> r2_score(y_test, y_test_pred_tuned)</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>rmse_tuned <span class="op">=</span> mean_squared_error(y_test, y_test_pred_tuned, squared<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">GBR after hyperparameter tuning with RandomizedSearchCV"</span>)</span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"R-squared (R2): </span><span class="sc">{</span>r2_tuned<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Root Mean Squared Error (MSE): </span><span class="sc">{</span>rmse_tuned<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+GBR after hyperparameter tuning with RandomizedSearchCV
+R-squared (R2): 0.8984439831641009
+Root Mean Squared Error (MSE): 26290.223669884374</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="50">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Saving the model for deployment</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> joblib</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:    </span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Saving pipeline!...."</span>)</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>    pipeline_filename <span class="op">=</span> <span class="st">'models/gbr_pipeline.pkl'</span></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>    joblib.dump(gbr_pipeline, pipeline_filename)<span class="op">;</span></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Pipeline saved successfully!"</span>)</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">Exception</span> <span class="im">as</span> err:</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Unexpected </span><span class="sc">{</span>err<span class="op">=</span><span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="bu">type</span>(err)<span class="op">=</span><span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Saving pipeline!....
+Pipeline saved successfully!</code></pre>
+</div>
+</div>
+<h3 align="center" class="anchored">
+5.Model Interpretation
+</h3>
+<p><a class="anchor" id="MI" href=""></a></p>
+<h5 class="anchored">
+Interpret the model to understand which features have the most significant impact on the car’s price.
+</h5>
+<p><a class="anchor" id="section_6_1" href=""></a></p>
+<h5 class="anchored">
+for ensemble models like Random Forest, Gradient Boosting, XGBoost,etc. we can use the feature importances provided by the models to determine the most significant features. For linear models like Linear Regression, we can examine the coefficients of the features.
+</h5>
+<div class="cell" data-execution_count="51">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.inspection <span class="im">import</span> permutation_importance</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>perm_importance <span class="op">=</span> permutation_importance(gbr_pipeline, X_train, y_train, n_repeats<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">1066</span>).importances_mean</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>importance_df <span class="op">=</span> pd.DataFrame({<span class="st">'features'</span>: X_train.columns,</span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>                              <span class="st">'importance'</span>: perm_importance})</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>importance_df.sort_values(by<span class="op">=</span><span class="st">'importance'</span>, ascending<span class="op">=</span><span class="va">False</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>importance_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="51">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">features</th>
+<th data-quarto-table-cell-role="th">importance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Year</td>
+<td>1.081950</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Model</td>
+<td>0.137521</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Transmission</td>
+<td>0.060854</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Brand</td>
+<td>0.051064</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Engine</td>
+<td>0.031452</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Color</td>
+<td>0.015220</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Kilometers</td>
+<td>0.009999</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Gov</td>
+<td>0.008060</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Body</td>
+<td>0.007000</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Fuel</td>
+<td>0.005061</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Year_Ranges</td>
+<td>0.000674</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

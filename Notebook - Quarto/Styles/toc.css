@@ -1,0 +1,75 @@
+
+
+.custom-toc {
+  margin-left: -62%;
+  position: sticky;
+  top: 20px; 
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.custom-toc p {
+    margin-left: 2.5%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.custom-toc a{
+    text-decoration: none;
+}
+
+.toc-item {
+    margin-bottom: 8px;
+}
+
+html{
+    backdrop-filter: blur(20px);
+
+}
+.all-sections{
+    color: aqua;
+    margin-left: 1%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    width: 400px;    
+}
+
+.all-lists {
+    margin-left: 5%;
+    border-left: 3px solid red;
+}
+.all-lists li {
+    margin-left: -5%;
+    color: cadetblue;
+
+}
+.all-lists ol {
+    color: bisque;
+}
+
+
+.toc-item.active {
+  font-weight: bold;
+}
+
+.custom-toc ol {
+  counter-reset: item;
+}
+
+.custom-toc li {
+  display: block;
+  font-size: small;
+}
+
+.custom-toc li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
+
+
+
+
+
+

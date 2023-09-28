@@ -1,0 +1,22 @@
+- https://quarto.org/
+- https://scikit-learn.org/stable/modules/model_evaluation.html
+- https://scipy-lectures.org/packages/scikit-learn/index.html#hyperparameter-optimization-with-cross-validation
+- https://mlu-explain.github.io/random-forest/
+- https://www.explorium.ai/blog/machine-learning/the-complete-guide-to-decision-trees/
+- https://towardsdatascience.com/all-you-need-to-know-about-gradient-boosting-algorithm-part-1-regression-2520a34a502
+- https://hands-on.cloud/how-to-use-gradient-boosting-algorithm-for-classification-and-regression-problems/
+- https://inria.github.io/scikit-learn-mooc/overfit/overfit_module_intro.html
+
+
+Websites for data:
+
+- https://eg.hatla2ee.com/en/car
+- https://www.contactcars.com/en/usedcars
+- https://sylndr.com/en/buy-used-cars
+- https://www.dubizzle.com.eg/en/vehicles/cars-for-sale/
+- https://eg.opensooq.com/en/cars/cars-for-sale
+- https://www.carsemsar.com/en/egypt/cars
+- https://fabrikaegypt.com/en/buy-car
+
+
+
